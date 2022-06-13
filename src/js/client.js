@@ -1,4 +1,4 @@
-const socket = io('http://node.rizn.top:25503');
+const socket = io('https://node.rizn.top:25503');
 const messageContainer = document.getElementById('message-container');
 const messageForm = document.getElementById('send-container');
 const messageInput = document.getElementById('message-input');
