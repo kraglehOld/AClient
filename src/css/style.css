@@ -1,0 +1,80 @@
+:root {
+    --bgr-c: #1f2933;
+    --chat-prim: #3f4d5a;
+    --chat-sec: #33404d;
+    --chat-text: azure;
+}
+
+body {
+    background-color: var(--bgr-c);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+#title {
+    text-align: center;
+    color: var(--chat-text);
+}
+
+#message-container {
+    width: 80%;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+#message-container div {
+    background-color: var(--chat-prim);
+    padding: 5px;
+    padding-left: 10px;
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
+    border-radius: 15px;
+    color: var(--chat-text);
+}
+
+#message-container div:nth-child(2n) {
+    background-color: var(--chat-sec);
+}
+
+#send-container {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    background-color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#message-input {
+    text-align: center;
+    height: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    outline: 0;
+    border: 0;
+}
+
+#message-input::placeholder {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#message-input:focus {
+    font-size: 18px;
+    font-weight: bold;
+}
